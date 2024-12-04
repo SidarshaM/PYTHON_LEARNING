@@ -1,0 +1,88 @@
+"""Exercise 1: List Sorting - Sort the given list in descending order using a built-in method.
+numbers = [5, 2, 9, 1, 7, 3]  Expected Output:[9, 7, 5, 3, 2, 1]"""
+
+print("\n*******Exercise 1********\n")
+print("Sorted numbers are \n")
+numbers=[5,2,9,7,3]
+numbers.sort(reverse=True)
+print(numbers)
+print("\n********************************\n")
+
+
+"""Exercise 2: List Filtering - Filter the odd numbers from the given list using a built-in method.
+numbers = [10, 15, 20, 25, 30, 35, 40]  Expected Output:[15, 25, 35]"""
+
+print("\n*******Exercise 2*******\n")
+print("Odd numbers are  \n")
+numbers = [10,15,20,25,30,35,40]
+oddnum = []
+for i in numbers:
+        if i%2 == 1:
+            oddnum.append(i)
+print(oddnum)
+print("\n********************************\n")  
+
+"""Exercise 3: Dictionary Manipulation - Create a dictionary to store student names and their grades. Implement the following functionalities:Add a
+new student.Remove a student.Update a student's grade.Display all students and their grades."""
+
+print("\n*******Exercise 3*******\n")
+print("Student Data  \n")
+student={" Rohan":"A","Ayana":"A+","Priyesh":"B"}
+print(student)
+print("\nAdding new students amrutha \n")
+student["Amrutha"]="A" 
+print(student)
+print("\nRemoving student Priyesh \n")
+del student["Priyesh"]
+print(student)
+print("\nUpdating grade of ayana from A+ to A\n")
+student.update({"Ayana":"A"})
+print(student)
+print("\nStudent data \n")
+print(student)
+print("\n********************************\n")
+
+#print("Student Data  \n")
+#student={"name":["Rohan","ayana","Priyesh","Gopika","jishnu"],"Grade":["A","A+","B","A","C"]}
+#student["name"].append("Anjali")
+#student["Grade"].append("B")
+#print(student)
+#print("\nRemoving student  \n")
+#student["name"].remove("jishnu")
+#student["Grade"].remove("C")
+#print(student)
+#import pandas as pd
+#pd.DataFrame(student) 
+"""Exercise 4: Set OperationsGiven two sets, find the union, intersection, and difference.
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+Expected Output:
+Union: {1, 2, 3, 4, 5, 6, 7, 8}
+Intersection: {4, 5}
+Difference (set1 - set2): {1, 2, 3}"""
+print("\n*******Exercise 4********\n")
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+print("First Set",set1)
+print("Second Set",set2)
+print("Union ",set1.union(set2))#set1 set2 all elements without duplication  ->print("Union ",set1|set2)
+print("Intersection",set2.intersection(set1))#common elements  ->print("Intersection",set1&set2)
+print("Difference  set1 -set2",set1.difference(set2))#set1-set2 ->print("Difference",set1-set2)
+print("Difference set2 -set1 ",set2.difference(set1))#set2-set1->print("Difference",set2-set1)
+
+
+"""Exercise 5: String Frequency CounterWrite a program that counts the frequency of each character in a given string.
+input_string = "hello world"
+h:1
+e:1
+l:3 etc"""
+print("\n*******Exercise 5********\n")
+input_string = "hello world"
+print("Frequency of h ",input_string.count("h"))
+print("Frequency of e ",input_string.count("e"))
+print("Frequency of l ",input_string.count("l"))
+print("Frequency of o ",input_string.count("o"))
+print("Frequency of w ",input_string.count("w"))
+print("Frequency of r ",input_string.count("r"))
+print("Frequency of l ",input_string.count("l"))
+print("Frequency of d ",input_string.count("d"))
